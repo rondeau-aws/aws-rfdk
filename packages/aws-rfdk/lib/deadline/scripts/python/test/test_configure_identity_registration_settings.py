@@ -562,7 +562,7 @@ class TestAwsInteraction(unittest.TestCase):
             self.assertIsInstance(chained_exception, json.JSONDecodeError)
             json_exception_msg = chained_exception.msg
 
-            self.assertRegexpMatches(msg, f'^AWS CLI did not output JSON as expected \\({re.escape(json_exception_msg)}\\). Output was:\n{re.escape(aws_cli_output)}')
+            self.assertRegex(msg, f'^AWS CLI did not output JSON as expected \\({re.escape(json_exception_msg)}\\). Output was:\n{re.escape(aws_cli_output)}')
 
     def test_fetch_secret(self):
         """
