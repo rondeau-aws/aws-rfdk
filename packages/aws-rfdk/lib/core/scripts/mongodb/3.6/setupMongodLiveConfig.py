@@ -98,7 +98,7 @@ def main():
   mongod_conf = yaml.load(sys.stdin)
   modify_security(mongod_conf)
   modify_net_options(mongod_conf)
-  print yaml.dump(mongod_conf, default_flow_style=False)
+  print(yaml.dump(mongod_conf, default_flow_style=False))
 
 if __name__ == '__main__':
   main()

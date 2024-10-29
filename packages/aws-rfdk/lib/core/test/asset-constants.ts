@@ -38,5 +38,5 @@ export const INSTALL_MONGODB_3_6_SCRIPT_LINUX = {
 
 export const MONGODB_3_6_CONFIGURATION_SCRIPTS = {
   Bucket: 'cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}',
-  Key: '433ead41839a7d4dad68bf0149f907050caa6d95bb7b5b180e5ff21a5dad3c19',
+  Key: '2a11bdd53d17a8a23d950470d6d39b65e6270619fa3692b915b0cdc153f0be27',
 };
